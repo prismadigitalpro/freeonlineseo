@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semrush Review — On-Page SEO Audit Tool | freeonlineseo.org</title>
+  <meta name="description" content="Semrush review: pricing, features, pros and cons. Is it the right on-page SEO audit tool for your workflow? Full breakdown at freeonlineseo.org." />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .page-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 32px 80px;
+    }
+
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--ink); }
+    .breadcrumb span { margin: 0 6px; }
+
+    .tool-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .tool-header-left h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 10px;
+    }
+
+    .tool-meta {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .score-large {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .price-display {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .intro-text {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #2a2a2a;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1.5px solid var(--border);
+    }
+
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--ink);
+    }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 32px 0;
+    }
+
+    .pros-box, .cons-box {
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .pros-box {
+      background: #f0faf4;
+      border: 1.5px solid #b7dfc6;
+    }
+
+    .cons-box {
+      background: #fdf5f3;
+      border: 1.5px solid #f0c4ba;
+    }
+
+    .pros-box .section-title { color: var(--green); }
+    .cons-box .section-title { color: var(--red); }
+
+    .pros-box ul, .cons-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .pros-box li, .cons-box li {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      padding: 5px 0;
+      padding-left: 20px;
+      position: relative;
+      color: #2a2a2a;
+    }
+
+    .pros-box li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .cons-box li::before {
+      content: '✗';
+      position: absolute;
+      left: 0;
+      color: var(--red);
+    }
+
+    .features-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1.5px solid var(--border);
+      margin: 20px 0 32px;
+    }
+
+    .features-table th {
+      background: var(--ink);
+      color: white;
+      padding: 12px 16px;
+      text-align: left;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    .features-table td {
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.875rem;
+    }
+
+    .features-table tr:last-child td { border-bottom: none; }
+    .features-table tr:nth-child(even) td { background: #faf8f5; }
+
+    .feature-check { color: var(--green); font-weight: 600; }
+    .feature-cross { color: var(--muted); }
+
+    .verdict-box {
+      background: var(--cream);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+
+    .verdict-box .section-title { color: var(--accent); margin-bottom: 10px; }
+    .verdict-box p { font-size: 0.95rem; line-height: 1.65; }
+
+    .visit-btn-wrap {
+      margin: 32px 0;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-top: 48px;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover { color: var(--ink); }
+
+    @media (max-width: 640px) {
+      .pros-cons { grid-template-columns: 1fr; }
+      .page-wrap { padding: 32px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../index.html">free<span>online</span>seo</a>
+  <ul class="nav-links">
+    <li><a href="../index.html#comparison">Comparison</a></li>
+    <li><a href="../index.html#top-picks">Top Picks</a></li>
+    <li><a href="../index.html">All Tools</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="../index.html#comparison">All Tools</a>
+    <span>›</span>
+    Semrush
+  </div>
+
+  <div class="tool-header">
+    <div class="tool-header-left">
+      <div class="tool-meta">
+        <span class="tag freemium">Freemium</span>
+        <span class="price-display">From $139.95/month</span>
+        <span class="tag">7-day free trial</span>
+      </div>
+      <h1>The Industry Standard All-in-One SEO Platform</h1>
+    </div>
+    <div class="score-large score-A">A</div>
+  </div>
+
+  <p class="intro-text">Semrush is one of the most comprehensive all-in-one SEO platforms available. Its Site Audit feature crawls up to 300,000 pages and runs 140+ pre-configured checks — covering everything from basic HTML errors to advanced crawlability concerns. It is the platform most professional SEO teams build their workflows around.</p>
+
+  <div class="visit-btn-wrap">
+    <a href="https://semrush.com" target="_blank" rel="noopener noreferrer" class="btn-accent">Visit Semrush →</a>
+  </div>
+
+  <div class="pros-cons">
+    <div class="pros-box">
+      <div class="section-title">Pros</div>
+      <ul>
+            <li>140+ pre-configured audit checks</li>
+            <li>Crawls up to 300,000 pages per project</li>
+            <li>Deep competitor analysis built in</li>
+            <li>Integrates with Google Analytics and Search Console</li>
+            <li>White-label reporting for agencies</li>
+            <li>Prioritised action lists by impact</li>
+      </ul>
+    </div>
+    <div class="cons-box">
+      <div class="section-title">Cons</div>
+      <ul>
+            <li>Expensive — starts at $139.95/mo</li>
+            <li>Steep learning curve for beginners</li>
+            <li>Some features overlap with cheaper tools</li>
+            <li>Can feel overwhelming for single-site owners</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-title">Feature Breakdown</div>
+  <table class="features-table">
+    <thead>
+      <tr><th>Feature</th><th>Available</th></tr>
+    </thead>
+    <tbody>
+            
+            <tr>
+              <td>300,000-page site crawl</td>
+              <td><span class="feature-check">✓ Yes</span></td>
+            </tr>
+            <tr>
+              <td>On-page SEO checker</td>
+              <td><span class="feature-check">✓ Yes</span></td>
+            </tr>
+            <tr>
+              <td>Competitor benchmarking</td>
+              <td><span class="feature-check">✓ Yes</span></td>
+            </tr>
+            <tr>
+              <td>Core Web Vitals tracking</td>
+              <td><span class="feature-check">✓ Yes</span></td>
+            </tr>
+            <tr>
+              <td>White-label reports</td>
+              <td><span class="feature-check">✓ Yes</span></td>
+            </tr>
+            <tr>
+              <td>GSC & GA4 integration</td>
+              <td><span class="feature-check">✓ Yes</span></td>
+            </tr>
+            <tr>
+              <td>Desktop application</td>
+              <td><span class="feature-cross">— No</span></td>
+            </tr>
+            <tr>
+              <td>Content auto-publishing</td>
+              <td><span class="feature-cross">— No</span></td>
+            </tr>
+    </tbody>
+  </table>
+
+  <div class="verdict-box">
+    <div class="section-title">Our Verdict</div>
+    <p>Semrush earns its place as the industry standard. If you manage multiple sites, need competitor data alongside audits, or run an agency that requires white-label reporting, no other tool matches its breadth.</p>
+  </div>
+
+  <div class="recommended-box">
+    <div>
+      <div class="rb-label">Recommended by freeonlineseo.org</div>
+      <h3>Need professional SEO &amp; web development in Bulgaria?</h3>
+      <p>Running Semrush yourself is powerful — but interpreting its data and acting on recommendations takes expertise. Website Masters BG provides managed SEO services for businesses who want results without the learning curve.</p>
+    </div>
+    <a href="https://websitemasters.bg" target="_blank" rel="noopener" class="btn-white">Website Masters BG →</a>
+  </div>
+
+  <a href="../index.html" class="back-link">← Back to all tools</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="nav-logo" href="../index.html">free<span>online</span>seo</a>
+      <p>Independent reviews of the best on-page SEO audit tools. No sponsored placements.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../index.html#comparison">Comparison Table</a></li>
+        <li><a href="../index.html#top-picks">Top Picks</a></li>
+        <li><a href="https://websitemasters.bg" target="_blank" rel="noopener">Website Masters BG →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 freeonlineseo.org — Independent SEO tool reviews</span>
+    <span>Not affiliated with any reviewed tool</span>
+  </div>
+</footer>
+
+</body>
+</html>
